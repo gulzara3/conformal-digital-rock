@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated manuscript."
+title: "Distribution-Free Calibrated Uncertainty for Pore-Scale Petrophysical Property Prediction via Conformal Prediction"
+abstract: >
+  Conformal prediction applied to three-dimensional CNN prediction of
+  log-permeability and porosity from micro-CT porous-media volumes, providing
+  prediction intervals with finite-sample distribution-free coverage guarantees.
+authors:
+  - family-names: Alam
+    given-names: Gulzar
+    affiliation: "Artificial Intelligence Collaboration Centre (AICC), Ulster University"
+  - family-names: Khan
+    given-names: Sikandar
+    affiliation: "King Fahd University of Petroleum & Minerals"
+    email: sikandarkhan@kfupm.edu.sa
+year: 2026
+license: MIT
+keywords:
+  - conformal prediction
+  - uncertainty quantification
+  - digital rock physics
+  - permeability prediction
+  - convolutional neural networks
+repository-code: "https://github.com/[USERNAME]/conformal-digital-rock"
