@@ -1,0 +1,18 @@
+name: conformal-rock
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - scipy>=1.10
+  - pandas>=2.0
+  - scikit-learn>=1.3
+  - h5py>=3.8
+  - tqdm
+  - matplotlib
+  - pytest
+  - pytorch>=2.1
+  - pip
+  - pip:
+      - -e .

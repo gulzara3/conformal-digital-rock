@@ -1,0 +1,9 @@
+method,needs,retraining_needed,guarantee
+Split conformal,point prediction only,no,"marginal, per property"
+Normalized conformal,point prediction + scale estimate (here the Gaussian head; MC-dropout or ensemble spread also work),"yes, if the model has no scale output","marginal, per property"
+CQR,lower and upper quantile predictions,"yes, if the model has no quantile outputs","marginal, per property"
+Mondrian conformal,point prediction + a grouping fixed before calibration,no,within each group
+Max-score joint conformal,point predictions (+ scales for the adaptive version),no (fixed scale),joint over properties
+Conformal OOD guard,a novelty score fitted on training data,no,false-alarm rate <= delta (no labels needed)
+Risk-controlled triage,any uncertainty score + calibration labels,no,"P(accepted and error > tolerance) <= eps, w.p. >= 1 - delta"
+Gaussian head / MC-dropout / ensemble,variance output / dropout / several networks,depends,none

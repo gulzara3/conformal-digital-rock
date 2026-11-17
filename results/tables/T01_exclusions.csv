@@ -1,0 +1,10 @@
+rule,n_flagged,n_new
+NaN or Inf in any feature,734,734
+formation factor > 120,2261,2208
+tortuosity > 1.8,1256,144
+permeability < 1e-4 px^2,114,0
+cementation factor < 1e-5,0,0
+relative Young's modulus > 0.7,498,440
+non-positive value in a log-transformed target,0,0
+TOTAL excluded,3526,3526
+valid volumes,14174,14174

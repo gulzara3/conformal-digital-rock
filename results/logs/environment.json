@@ -1,0 +1,31 @@
+{
+ "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+ "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+ "torch": "2.14.1+cu130",
+ "cuda": "13.0",
+ "gpu": "NVIDIA L4",
+ "numpy": "2.4.6",
+ "scipy": "1.16.3",
+ "sklearn": "1.6.1",
+ "pandas": "2.2.3",
+ "h5py": "3.14.0",
+ "profile": "paper",
+ "data": {
+  "N": 14174,
+  "N_ALL": 17700,
+  "FULL_RES": 256,
+  "K_W": 4,
+  "K_H": 2,
+  "ONES_IS_SOLID": true,
+  "phase_rho": -0.8806990881458967,
+  "source": "DeePore_Dataset.h5, Zenodo 4297035, md5 d56fbd79f451353af131402c42b179d7",
+  "md5": "d56fbd79f451353af131402c42b179d7",
+  "has_hi": true,
+  "preprocess_s": 1784.0251841545105,
+  "poremap_cap": 24,
+  "work_res": 64,
+  "hi_res": 128,
+  "n_max": 0
+ },
+ "timers": {}
+}

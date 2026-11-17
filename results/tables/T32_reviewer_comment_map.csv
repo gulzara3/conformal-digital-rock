@@ -1,0 +1,21 @@
+reviewer_comment,issue,what_this_notebook_does,evidence
+R1,"Novelty: known methods, one dataset, two properties",Six simulated properties; joint guarantee (S12); label-free OOD guard (S13b); weighted conformal (S13c); risk-controlled simulation triage (S14),"T23, T25-T29; F12, F14-F16"
+R1,Labels are simulations; OOD test only withholds a label tail,Claims restated as coverage of DeePore reference labels; input-defined family holdout and index-block split added; labelled-free guard,T24-T26; F13-F15
+R1,Repository not reproducible,"Data rebuilt from the public Zenodo file with checksum; split indices, checkpoints, predictions, tables, figures and environment exported","S4, S15c; release zip"
+R2-1,"4,000 at 64^3 vs 17,700 at 256^3; preprocessing; pairing",All valid volumes; exclusion counts; no crop; porosity-conserving two-channel coarse-graining; connectivity check; input ablation,"T01, T02, T12, T13; F01, F03"
+R2-2,Related samples across splits,"Index-structure check, index-block split, morphology-family holdout; exchangeability within the collection separated from new rocks","T03, T24; F02, F13"
+R2-3,Mondrian partition from the calibration set,Group edges from training predictions (exact group-conditional guarantee); comparison with the original rule; score and binning stated,"S7, T18; F10"
+R2-4,Joint vs marginal coverage,All guarantees stated per property; joint coverage measured; Bonferroni and max-score joint conformal,T23; F12
+R2-5,"Figures, tables and sources disagree",Every figure and table is generated from the same saved predictions in one run,"all T*, F*"
+R2-6,"Calibration size up to 1,600 leaves no test data",Sizes drawn from the untouched cal+test pool of a fixed predictor; counts per setting,"T14, T15; F09"
+R2-7,Coverage error averaged before taking absolute value,"Absolute error per property and seed, then averaged; maximum also reported",T07
+R2-8,"One seed, one split; worst-slice noise; validity wording",10 independent training seeds and splits; paired differences; per-bin tables; exact-law test of the implementation,"T06-T09, T15; F06, F08, F09"
+R2-9,"MC-dropout variance, passes, BN/dropout modes, auxiliary heads, Gaussian over-coverage",Means-only and total-variance MC-dropout to 100 passes; modes stated; mean-only and dedicated-Gaussian ablations; ensemble,T20-T22; F11
+R2-10,"OOD experiment details, Mondrian missing, framing","Cut-off, counts, retraining stated; all methods and properties; called a target-support stress test; label-free guard instead of label-based gap","T04, T24, T25; F13, F14"
+R2-11,MAE/RMSE/R2; porosity baseline; units; physical widths,Metrics per property with descriptor and Kozeny-Carman baselines; porosity shown to be an exact count and dropped as a target; px^2 units and conversion; fold-factor intervals,"T05, T11, T12; F04, F07"
+R2-12,'Any predictor without retraining' too broad; cost,Requirements per method; measured cost on the stated hardware,"T30, T31"
+R2-13,"Equations, quantile convention, Algorithm 1","Order-statistic definition, ties, infinite threshold, small-group fallback stated",S7
+R2-14,Fixed 0.05/0.95 heads across the sweep; crossing; negative adjustments,Ten quantile heads with matched pair per level; fixed-pair comparison; crossing and inversion counts,"T10, T19; F10"
+R2-15,Figure omissions and errors,All four conformal methods in every figure; width distributions; no clipped legends,F05-F09
+R2-16,"Terminology, duplicated text, citations",Manuscript text (not in this notebook),-
+R2-17,Immutable release,Release zip with manifest and hashes; tag the repository at the commit that produced it,S15c

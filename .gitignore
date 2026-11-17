@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Large artefacts kept out of git (release assets / Zenodo)
+data/raw/
+data/processed/
+release/
+runs/
+reproduced/
+checkpoints/*.pt
+*.h5
+*.zip
+
+# Editors and OS
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db

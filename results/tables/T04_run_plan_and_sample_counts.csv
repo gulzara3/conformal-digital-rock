@@ -1,0 +1,31 @@
+run,group,mode,input,init_seed,tr,val,cal,te,note,ood
+main_s0,main,joint,main,0,7796,709,2835,2834,,0.0
+main_s1,main,joint,main,1,7796,709,2835,2834,,0.0
+main_s2,main,joint,main,2,7796,709,2835,2834,,0.0
+main_s3,main,joint,main,3,7796,709,2835,2834,,0.0
+main_s4,main,joint,main,4,7796,709,2835,2834,,0.0
+main_s5,main,joint,main,5,7796,709,2835,2834,,0.0
+main_s6,main,joint,main,6,7796,709,2835,2834,,0.0
+main_s7,main,joint,main,7,7796,709,2835,2834,,0.0
+main_s8,main,joint,main,8,7796,709,2835,2834,,0.0
+main_s9,main,joint,main,9,7796,709,2835,2834,,0.0
+meanonly_s0,ablation,mean_only,main,0,7796,709,2835,2834,same split and initial seed as main_s0,0.0
+gauss_s0_m0,ablation,gaussian,main,0,7796,709,2835,2834,,0.0
+meanonly_s1,ablation,mean_only,main,1,7796,709,2835,2834,same split and initial seed as main_s1,0.0
+gauss_s1_m0,ablation,gaussian,main,1,7796,709,2835,2834,,0.0
+meanonly_s2,ablation,mean_only,main,2,7796,709,2835,2834,same split and initial seed as main_s2,0.0
+gauss_s2_m0,ablation,gaussian,main,2,7796,709,2835,2834,,0.0
+gauss_s0_m1,ablation,gaussian,main,1001,7796,709,2835,2834,deep-ensemble member,0.0
+gauss_s0_m2,ablation,gaussian,main,1002,7796,709,2835,2834,deep-ensemble member,0.0
+gauss_s0_m3,ablation,gaussian,main,1003,7796,709,2835,2834,deep-ensemble member,0.0
+gauss_s0_m4,ablation,gaussian,main,1004,7796,709,2835,2834,deep-ensemble member,0.0
+shiftA,shift,joint,main,0,5847,532,2126,2125,label-support extrapolation: log k >= -0.024 withheld,3544.0
+family_f0,shift,joint,main,0,6295,572,2289,2289,"morphology families [np.int64(2), np.int64(1)] withheld",2729.0
+family_f1,shift,joint,main,0,7007,637,2548,2548,"morphology families [np.int64(3), np.int64(5)] withheld",1434.0
+family_f2,shift,joint,main,0,5975,543,2173,2172,"morphology families [np.int64(8), np.int64(9)] withheld",3311.0
+block,shift,joint,main,0,7694,720,2880,2880,index blocks of 120 kept together,0.0
+res_main,resolution,mean_only,main,0,1100,100,400,400,,0.0
+res_frac,resolution,mean_only,frac,0,1100,100,400,400,,0.0
+res_bin,resolution,mean_only,bin,0,1100,100,400,400,,0.0
+res_lo,resolution,mean_only,lo,0,1100,100,400,400,,0.0
+res_hi,resolution,mean_only,hi,0,1100,100,400,400,,0.0

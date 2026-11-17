@@ -1,0 +1,13 @@
+method,prop,n_inverted,n_crossed,qhat,n_fallback_groups,min_group_n
+cqr,E_rel,0.0,0.0,-0.0067078590393066405,,
+cqr,log_F,0.0,0.0,-0.02593921422958374,,
+cqr,log_k,0.0,0.0,-0.04772912040352821,,
+cqr,log_rp,0.0,0.0,-0.007431429624557495,,
+cqr,log_ssa,0.0,0.0,-0.017169809341430663,,
+cqr,tau,0.0,0.0,-0.007089507579803467,,
+mondrian,E_rel,,,,0.0,539.1
+mondrian,log_F,,,,0.0,534.6
+mondrian,log_k,,,,0.0,539.5
+mondrian,log_rp,,,,0.0,537.3
+mondrian,log_ssa,,,,0.0,530.4
+mondrian,tau,,,,0.0,537.2

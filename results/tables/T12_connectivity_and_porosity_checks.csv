@@ -1,0 +1,8 @@
+check,value
+pore space spans the sample at 256^3,1.0
+... and still spans after majority re-binarisation to 128^3,1.0
+... and still spans after majority re-binarisation to 64^3,0.9966666666666667
+spanning status changed by re-binarisation to 64^3 (any direction),0.0033333333333333335
+median |porosity change| from re-binarisation to 64^3,0.002408802509307889
+max |porosity change| from re-binarisation to 64^3,0.02910017967224121
+max |porosity change| in the two-channel input used here,0.0

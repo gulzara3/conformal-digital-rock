@@ -1,0 +1,141 @@
+{
+ "data": {
+  "n_volumes": 14174,
+  "source": "DeePore_Dataset.h5, Zenodo 4297035, md5 d56fbd79f451353af131402c42b179d7",
+  "full_res": 256,
+  "work_res": 64,
+  "n_seeds": 10,
+  "n_cal": 2835,
+  "n_test": 2834
+ },
+ "accuracy_R2": {
+  "log_k": 0.9824,
+  "log_F": 0.9891,
+  "tau": 0.948,
+  "log_ssa": 0.9978,
+  "log_rp": 0.9868,
+  "E_rel": 0.7863
+ },
+ "mean_abs_cov_error_pp": {
+  "split": 0.58,
+  "norm": 0.52,
+  "cqr": 0.73,
+  "mondrian": 0.55,
+  "gauss": 7.34,
+  "mcd": 20.14,
+  "mcd_tot": 7.96,
+  "ens": 7.96
+ },
+ "worst_porosity_group_cov_log_k": {
+  "split": 0.815,
+  "norm": 0.855,
+  "cqr": 0.85,
+  "mondrian": 0.87
+ },
+ "width_rel_split": {
+  "split": 1.0,
+  "norm": 0.869,
+  "cqr": 0.985,
+  "mondrian": 0.969,
+  "gauss": 1.466,
+  "mcd": 0.669,
+  "mcd_tot": 1.653,
+  "ens": 1.57
+ },
+ "joint": {
+  "k + F | Independent 90% intervals": 0.857,
+  "k + F | Bonferroni": 0.927,
+  "k + F | Max-score, fixed scale": 0.899,
+  "k + F | Max-score, adaptive scale": 0.896,
+  "all 6 | Independent 90% intervals": 0.637,
+  "all 6 | Bonferroni": 0.921,
+  "all 6 | Max-score, fixed scale": 0.901,
+  "all 6 | Max-score, adaptive scale": 0.9
+ },
+ "guard": {
+  "label extrapolation | network features": {
+   "false_alarm": 0.056,
+   "detection": 0.833,
+   "auroc": 0.958
+  },
+  "label extrapolation | image descriptors": {
+   "false_alarm": 0.05,
+   "detection": 0.386,
+   "auroc": 0.851
+  },
+  "family fold 0 | network features": {
+   "false_alarm": 0.051,
+   "detection": 0.494,
+   "auroc": 0.778
+  },
+  "family fold 0 | image descriptors": {
+   "false_alarm": 0.049,
+   "detection": 0.448,
+   "auroc": 0.825
+  },
+  "family fold 1 | network features": {
+   "false_alarm": 0.048,
+   "detection": 0.218,
+   "auroc": 0.781
+  },
+  "family fold 1 | image descriptors": {
+   "false_alarm": 0.058,
+   "detection": 0.932,
+   "auroc": 0.987
+  },
+  "family fold 2 | network features": {
+   "false_alarm": 0.058,
+   "detection": 0.194,
+   "auroc": 0.749
+  },
+  "family fold 2 | image descriptors": {
+   "false_alarm": 0.06,
+   "detection": 0.358,
+   "auroc": 0.849
+  }
+ },
+ "triage_tol1.25_eps0.05": {
+  "Gaussian-head sd": {
+   "avoided": 0.803,
+   "bad_accept": 0.0455
+  },
+  "CQR band width": {
+   "avoided": 0.803,
+   "bad_accept": 0.045
+  },
+  "MC-dropout total sd": {
+   "avoided": 0.792,
+   "bad_accept": 0.045
+  },
+  "Feature novelty": {
+   "avoided": 0.656,
+   "bad_accept": 0.0443
+  },
+  "Random (no information)": {
+   "avoided": 0.317,
+   "bad_accept": 0.0445
+  }
+ },
+ "triage_eps1pct": {
+  "factor 1.25 | Gaussian-head sd": 0.562,
+  "factor 1.25 | CQR band width": 0.557,
+  "factor 1.25 | MC-dropout total sd": 0.524,
+  "factor 1.25 | Feature novelty": 0.378,
+  "factor 1.25 | Random (no information)": 0.057,
+  "factor 1.5 | Gaussian-head sd": 0.824,
+  "factor 1.5 | CQR band width": 0.822,
+  "factor 1.5 | MC-dropout total sd": 0.802,
+  "factor 1.5 | Feature novelty": 0.548,
+  "factor 1.5 | Random (no information)": 0.155,
+  "factor 2 | Gaussian-head sd": 0.971,
+  "factor 2 | CQR band width": 0.97,
+  "factor 2 | MC-dropout total sd": 0.97,
+  "factor 2 | Feature novelty": 0.809,
+  "factor 2 | Random (no information)": 0.496,
+  "factor 3 | Gaussian-head sd": 0.997,
+  "factor 3 | CQR band width": 0.996,
+  "factor 3 | MC-dropout total sd": 0.997,
+  "factor 3 | Feature novelty": 0.999,
+  "factor 3 | Random (no information)": 0.999
+ }
+}

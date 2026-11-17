@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: "If you use this software or its released results, please cite the paper and the DeePore dataset."
+title: "conformal-digital-rock: conformal uncertainty and risk-controlled simulation triage for digital rock"
+version: 2.0.0
+date-released: 2026-11-17
+license: MIT
+repository-code: "https://github.com/gulzara3/conformal-digital-rock"
+abstract: >
+  Code, data pipeline, trained-model outputs, tables and figures for a study of conformal prediction
+  for deep-learning prediction of six pore-network properties of 14,174 DeePore micro-CT volumes:
+  property-wise and joint coverage, an exact finite-sample test of the implementation, a label-free
+  out-of-distribution guard, weighted conformal prediction and Learn-then-Test simulation triage.
+authors:
+  - family-names: Alam
+    given-names: Gulzar
+    affiliation: "Artificial Intelligence Collaboration Centre (AICC), Ulster University"
+  - family-names: Khan
+    given-names: Sikandar
+    affiliation: "King Fahd University of Petroleum & Minerals"
+    email: sikandarkhan@kfupm.edu.sa
+keywords:
+  - conformal prediction
+  - uncertainty quantification
+  - digital rock physics
+  - permeability prediction
+  - risk control
+  - out-of-distribution detection
+preferred-citation:
+  type: article
+  title: "Conformal uncertainty quantification and risk-controlled simulation triage for deep-learning prediction of pore-scale properties from micro-CT images"
+  authors:
+    - family-names: Alam
+      given-names: Gulzar
+    - family-names: Khan
+      given-names: Sikandar
+  year: 2026
+  status: submitted
+  journal: "Artificial Intelligence in Geosciences"
+references:
+  - type: article
+    title: "DeePore: A deep learning workflow for rapid and comprehensive characterization of porous materials"
+    authors:
+      - family-names: Rabbani
+        given-names: Arash
+      - family-names: Babaei
+        given-names: Masoud
+      - family-names: Shams
+        given-names: Reza
+      - family-names: Wang
+        given-names: Ying Da
+      - family-names: Chung
+        given-names: Traiwit
+    journal: "Advances in Water Resources"
+    volume: 146
+    start: 103787
+    year: 2020
+    doi: 10.1016/j.advwatres.2020.103787

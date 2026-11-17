@@ -1,0 +1,8 @@
+item,value,unit,hardware
+"preprocessing of 14,174 volumes (256^3 -> 2x64^3), once",29.733753069241843,min,NVIDIA L4; 12 CPU cores; torch 2.14.1+cu130; mixed precision on
+"training, one jointly trained network",6.6905984954039255,min,NVIDIA L4; 12 CPU cores; torch 2.14.1+cu130; mixed precision on
+"inference, deterministic (all heads)",0.7151663345427343,ms / volume,NVIDIA L4; 12 CPU cores; torch 2.14.1+cu130; mixed precision on
+"inference, MC-dropout (30 passes)",20.52568512674633,ms / volume,NVIDIA L4; 12 CPU cores; torch 2.14.1+cu130; mixed precision on
+"conformal calibration + intervals for 2,834 test volumes (n_cal = 2,835)",0.35026685624998777,"ms, total",NVIDIA L4; 12 CPU cores; torch 2.14.1+cu130; mixed precision on
+"deep ensemble (5 networks), training",33.3512454311053,min,NVIDIA L4; 12 CPU cores; torch 2.14.1+cu130; mixed precision on
+"all runs in this notebook, training",2.8959287254015607,h,NVIDIA L4; 12 CPU cores; torch 2.14.1+cu130; mixed precision on

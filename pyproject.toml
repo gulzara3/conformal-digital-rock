@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conformal-rock"
+version = "2.0.0"
+description = "Conformal uncertainty and risk-controlled simulation triage for deep-learning prediction of pore-scale rock properties"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Gulzar Alam" },
+  { name = "Sikandar Khan", email = "sikandarkhan@kfupm.edu.sa" },
+]
+requires-python = ">=3.10"
+keywords = ["conformal prediction", "uncertainty quantification", "digital rock physics", "permeability", "risk control", "micro-CT"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pandas>=2.0",
+  "scikit-learn>=1.3",
+]
+
+[project.optional-dependencies]
+torch = ["torch>=2.1", "h5py>=3.8", "tqdm>=4.60"]
+plots = ["matplotlib>=3.7"]
+dev = ["pytest>=7.4", "ruff>=0.5", "h5py>=3.8", "tqdm>=4.60"]
+
+[project.urls]
+Homepage = "https://github.com/gulzara3/conformal-digital-rock"
+Issues = "https://github.com/gulzara3/conformal-digital-rock/issues"
+Dataset = "https://zenodo.org/records/4297035"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 150
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E702", "E731", "E741"]
