@@ -1,0 +1,21 @@
+property,method,coverage,width,regime
+log_k,Split-Conformal,0.9580952380952381,0.7810203433036804,In-distribution
+log_k,Norm-Conformal,0.9352380952380952,0.638703465461731,In-distribution
+log_k,CQR,0.9142857142857143,0.6750974655151367,In-distribution
+log_k,Gaussian (heterosced.),0.9885714285714285,0.8987107043571335,In-distribution
+log_k,MC-Dropout,0.699047619047619,0.3894785029160807,In-distribution
+porosity,Split-Conformal,0.8628571428571429,0.19953346252441406,In-distribution
+porosity,Norm-Conformal,0.8666666666666667,0.194144606590271,In-distribution
+porosity,CQR,0.8876190476190476,0.24762366712093353,In-distribution
+porosity,Gaussian (heterosced.),1.0,0.6460815764046747,In-distribution
+porosity,MC-Dropout,0.9695238095238096,0.38735001910349376,In-distribution
+log_k,Split-Conformal,0.469,0.7810202836990356,Out-of-distribution
+log_k,Norm-Conformal,0.02,0.28740015625953674,Out-of-distribution
+log_k,CQR,0.016,0.3208848237991333,Out-of-distribution
+log_k,Gaussian (heterosced.),0.138,0.40258732499175903,Out-of-distribution
+log_k,MC-Dropout,0.025,0.3185055067823221,Out-of-distribution
+porosity,Split-Conformal,0.322,0.19953346252441406,Out-of-distribution
+porosity,Norm-Conformal,0.308,0.19336546957492828,Out-of-distribution
+porosity,CQR,0.847,0.4308662712574005,Out-of-distribution
+porosity,Gaussian (heterosced.),0.946,0.6434754992408492,Out-of-distribution
+porosity,MC-Dropout,0.929,0.6565249033193411,Out-of-distribution
