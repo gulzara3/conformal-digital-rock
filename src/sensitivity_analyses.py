@@ -1,5 +1,8 @@
-import numpy as np, pandas as pd
 from math import ceil
+
+import numpy as np
+import pandas as pd
+
 rng = np.random.default_rng(0)
 
 # --- Reconstruct a predictor consistent with reported paper numbers ---
@@ -48,7 +51,8 @@ def mondrian_run(y, mu, idx_cal, idx_te, alpha, nbins):
     wb = np.digitize(pt, wedges[1:-1]); covs=[]
     for k in range(5):
         m=wb==k
-        if m.sum()>=5: covs.append(cov(y[idx_te][m], lo[m], hi[m]))
+        if m.sum() >= 5:
+            covs.append(cov(y[idx_te][m], lo[m], hi[m]))
     return cov(y[idx_te], lo, hi), float((hi-lo).mean()), (min(covs) if covs else np.nan)
 
 alpha=0.10

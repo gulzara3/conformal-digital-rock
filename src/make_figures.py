@@ -1,12 +1,15 @@
-import numpy as np, pandas as pd
+import os
+
 import matplotlib
-matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from math import ceil
+import numpy as np
+import pandas as pd
+
+matplotlib.use("Agg")
 
 UP = "../results/"
 OUT = "../figures/"
-import os; os.makedirs(OUT, exist_ok=True)
+os.makedirs(OUT, exist_ok=True)
 
 plt.rcParams.update({
     "font.family": "DejaVu Sans",
@@ -68,7 +71,8 @@ for ax, prop in zip(axes, props):
     sub = sweep[sweep.property==prop]
     for m in ORDER:
         g = sub[sub.method==m].sort_values("target")
-        if len(g)==0: continue
+        if len(g) == 0:
+            continue
         st = STYLE[m]
         ax.plot(g["target"], g["coverage"], color=st["color"], marker=st["marker"],
                 ls=st["ls"], ms=5.5, lw=1.8, mfc=st["mfc"], mew=1.2, label=SHORT[m])
